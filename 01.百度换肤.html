@@ -1,0 +1,109 @@
+<!--<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<style>
+		*{
+			padding: 0px;
+			margin: 0px;
+		}		
+		body{
+			background: url(img/1.jpg) no-repeat;
+		}
+		.boox{
+			text-align: center;
+			padding-top:50px;
+			background-color: rgba(255,255,255,.2);/*透明度*/
+			height: 150px;
+		}
+		.boox img{
+			cursor: pointer;/*鼠标变小手*/
+		}
+	</style>
+	<script>
+		window.onload=function(){
+			var a=document.getElementsByTagName("img");
+			a[0].onclick=function(){
+					document.body.style.backgroundImage="url(img/1.jpg)";
+				}
+			a[1].onclick=function(){
+					document.body.style.backgroundImage="url(img/2.jpg)";
+				}
+			a[2].onclick=function(){
+					document.body.style.backgroundImage="url(img/3.jpg)";
+				}
+			a[3].onclick=function(){
+					document.body.style.backgroundImage="url(img/4.jpg)";
+				}
+			a[4].onclick=function(){
+					document.body.style.backgroundImage="url(img/5.jpg)";
+				}
+		}
+	</script>
+	<body>
+		<div class="boox">
+			<img src="img/1.jpg" width="150px"/>
+			<img src="img/2.jpg" width="150px"/>
+			<img src="img/3.jpg" width="150px"/>
+			<img src="img/4.jpg" width="150px"/>
+			<img src="img/5.jpg" width="150px"/>
+		</div>
+	</body>
+</html>-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			body{
+				background: url(img/1.jpg) no-repeat;
+			}
+			.box{
+				height: 150px;
+				text-align: center;
+				padding-top: 50px;
+				background-color:rgba(255,255,255,.2);
+			}
+			.box img{
+				cursor: pointer;
+			}
+		</style>
+		<script>
+			window.onload=function(){
+				var img=document.getElementsByTagName("img");
+				img[0].onclick=function(){
+					document.body.style.backgroundImage="url(img/1.jpg)";
+				}
+				img[1].onclick=function(){
+					document.body.style.backgroundImage="url(img/2.jpg)";
+				}
+				img[2].onclick=function(){
+					document.body.style.backgroundImage="url(img/3.jpg)";
+				}
+				img[3].onclick=function(){
+					document.body.style.backgroundImage="url(img/4.jpg)";
+				}
+				img[4].onclick=function(){
+					document.body.style.backgroundImage="url(img/5.jpg)";
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<div class="box">
+			<img src="img/1.jpg" width="150px">
+			<img src="img/2.jpg" width="150px">
+			<img src="img/3.jpg" width="150px">
+			<img src="img/4.jpg" width="150px">
+			<img src="img/5.jpg" width="150px">
+		</div>
+	</body>
+</html>

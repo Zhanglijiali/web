@@ -1,0 +1,142 @@
+<!--<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			*{
+				margin: 0px;
+				padding: 0px;
+				list-style: none;
+			}
+			.box{
+				margin: 100px auto;/*居中*/
+				width: 360px;
+				border: 1px solid gray;
+				padding-top: 360px;
+				background-image: url(img/01big.jpg);
+				background-repeat: no-repeat;
+			}
+			.box ul{
+				list-style: none;
+				height: 70px;
+				border-top: 1px solid gray;
+			}
+			.box ul li{
+				float: left;
+				cursor: pointer;
+			}
+			
+		</style>
+				<script>
+			window.onload=function(){
+				var a=document.getElementById("a");
+				var lis=document.getElementsByTagName("li");
+				lis[0].onmouseover=function(){
+					a.style.backgroundImage="url(img/01big.jpg)";
+				}
+				lis[1].onmouseover=function(){
+					a.style.backgroundImage="url(img/02big.jpg)";
+				}
+				lis[2].onmouseover=function(){
+					a.style.backgroundImage="url(img/03big.jpg)";
+				}
+				lis[3].onmouseover=function(){
+					a.style.backgroundImage="url(img/04big.jpg)";
+				}
+				lis[4].onmouseover=function(){
+					a.style.backgroundImage="url(img/05big.jpg)";
+				}
+				//方法二
+				
+//				function fn(object1,object2,imgUrl){
+//					object1.onmouseover=function(){
+//						object2.style.backgroundImage=imgUrl;
+//					}
+//				}
+//				fn(lis[0],box,"url(img/01big.jpg)");
+//				fn(lis[1],box,"url(img/02big.jpg)");
+//				fn(lis[2],box,"url(img/03big.jpg)");
+//				fn(lis[3],box,"url(img/04big.jpg)");
+//				fn(lis[4],box,"url(img/05big.jpg)");
+//				var imgUrls=["url(img/01big.jpg)","url(img/02big.jpg)","url(img/03big.jpg)","url(img/04big.jpg)","url(img/05big.jpg)"];
+//				for(var i=0;i<lis.length;i++){
+//					fn(lis[i],box,imgUrls[i]);
+//				}
+			}
+		</script>
+	</head>
+	<body>
+		<div class="box" id="a">
+		<ul>
+		<li><img src="img/01.jpg" /></li>
+		<li><img src="img/02.jpg" /></li>
+		<li><img src="img/03.jpg" /></li>
+		<li><img src="img/04.jpg" /></li>
+		<li><img src="img/05.jpg" /></li>
+		</ul>
+		</div>
+	</body>
+</html>-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			.box{
+				width: 360px;
+				margin: 100px auto;
+				padding-top: 360px;
+				border: 1px solid gray;
+				background-image: url(img/01big.jpg);
+				background-repeat: no-repeat;
+			}
+			.box ul{
+				list-style: none;
+				border-top: 1px solid gray;
+				height: 70px;
+			}
+			.box ul li{
+				float: left;
+				cursor: pointer;
+			}
+		</style>
+		<script>
+			window.onload=function(){
+				var box=document.getElementById("box");
+				var lis=document.getElementsByTagName("li");
+				lis[0].onmouseover=function(){
+					box.style.backgroundImage="url(img/01big.jpg)";
+				}
+				lis[1].onmouseover=function(){
+					box.style.backgroundImage="url(img/02big.jpg)";
+				}
+				lis[2].onmouseover=function(){
+					box.style.backgroundImage="url(img/03big.jpg)";
+				}
+				lis[3].onmouseover=function(){
+					box.style.backgroundImage="url(img/04big.jpg)";
+				}
+				lis[4].onmouseover=function(){
+					box.style.backgroundImage="url(img/05big.jpg)";
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<div class="box" id="box">
+			<ul>
+				<li><img src="img/01.jpg" /></li>
+				<li><img src="img/02.jpg" /></li>
+				<li><img src="img/03.jpg" /></li>
+				<li><img src="img/04.jpg" /></li>
+				<li><img src="img/05.jpg" /></li>
+			</ul>
+		</div>
+	</body>
+</html>
